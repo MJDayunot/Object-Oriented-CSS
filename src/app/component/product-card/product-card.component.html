@@ -1,0 +1,13 @@
+<div class="card">
+  <img
+    [ngSrc]="productImage"
+    alt="{{ productName }}"
+    class="product-image"
+    width="300"
+    height="300"
+    loading="eager"
+  />
+  <h2>{{ productName }}</h2>
+  <p>Price: ${{ productPrice.toFixed(2) }}</p> <!-- Show price with two decimal places -->
+  <button class="add-to-cart-button" (click)="addToCart(productName, productPrice)">Add to Cart</button>
+</div>
